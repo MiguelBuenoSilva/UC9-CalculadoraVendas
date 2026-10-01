@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de pagamentos</title>
+</head>
+
+<body>
+    <main>
+        <h1>Simulador de Caixa de Loja</h1>
+
+        <div>
+            <label for="txtValorCompra">Valor da compra</label>
+            <input type="number" id="txtValorCompra" placeholder="Ex. 150.00">
+        </div>
+
+        <div>
+            <label for="cbFormaPagamento">Forma de pagamento:</label>
+            <select id="cbFormaPagamento">
+                <option value="pix">PIX (Desconto de 5%)</option>
+                <option value="credito">Cartão de crédito</option>
+                <option value="avista">À vista </option>
+            </select>
+        </div>
+
+        <button type="button" onclick="calcularValor()">
+            Calcular preço final
+        </button>
+
+        <div id="resultado"></div>
+
+    </main>
+    <script src="calculadora.js"></script>
+
+</body>
+
+</html>
